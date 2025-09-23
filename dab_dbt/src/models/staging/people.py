@@ -1,9 +1,8 @@
-
-
 def Person():
     from faker import Faker
 
     faker = Faker()
+    faker.seed(27529)
     return {
         "name": faker.name(),
         "address": faker.address(),
